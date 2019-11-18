@@ -1,0 +1,57 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<style>
+	canvas{
+		-moz-user-select: none;
+		-webkit-user-select: none;
+		-ms-user-select: none;
+	}
+	
+</style>
+<script type = "text/javascript" 
+         src = "https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+
+<script src="https://code.highcharts.com/highcharts.js"></script>
+<script src="https://code.highcharts.com/modules/exporting.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.min.js"></script>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body style="background-color: #D3D3D3;background-size:100% 100 %; margin: 15px;">
+<p style="font-family:Calibri; color:Red; font-size: 50px;">Weather Forecast</p>
+<p style="font-family:Calibri; color:Red;">Enter a date:<p>
+<div class="row" style="padding-bottom: 15px;">
+<div class="col-4">
+<input type="date" id="dateval" class="form-control">
+</div>
+<div class="col-8">
+<button id = "btnSubmit" class="btn btn-primary">Forecast</button>
+<input type="button" id="btnRecheck" style = "display : none;" class="btn btn-primary" value="ReCheck" onclick="reset()"/>
+</div>
+
+</div>
+<div class = "split left">
+<div class="col-5">
+<canvas id="canvas"></canvas>
+</div>
+</div>
+
+</div>
+<div class = "split right">
+<div class="col-5">
+<canvas id="canvas1"></canvas>
+</div>
+</div>
+
+
+<center><div id="validid" style="font-family:Calibri; color:Red; font-size:30px;"></div></center>
+<div id="container" style="min-width: 800px; height: 800px; margin: 0 auto"></div>
+<div id="container1" style="min-width: 800px; height: 800px; margin: 0 auto"></div>
+
+<script src = "static/script.js"></script>
+
+
+</body>
+
+</html>
+
